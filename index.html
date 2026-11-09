@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="个人作品集，展示产品策划、游戏设计、AI探索与数字创作实践。">
+    <title>yoyo's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="#" class="logo">YOYO<span>.</span></a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="打开导航菜单">
+            <span></span>
+            <span></span>
+        </button>
+
+<nav class="nav-links" id="navLinks">
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#works" data-i18n="navWorks">Works</a>
+        <a href="#expertise" data-i18n="navExpertise">Expertise</a>
+        <!-- <a href="#contact" data-i18n="navContact">Contact</a> -->
+
+        <div class="language-switch" aria-label="Language selection">
+            <button type="button" class="lang-trigger" aria-label="Switch language">
+                <svg class="lang-globe" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <circle cx="12" cy="12" r="8.5"></circle>
+                    <path d="M4 12h16M12 3.5c2.5 2.3 3.8 5.1 3.8 8.5S14.5 18.2 12 20.5C9.5 18.2 8.2 15.4 8.2 12S9.5 5.8 12 3.5Z"></path>
+                    <path d="M8 7.2c1.8 1.6 2.8 4.2 2.8 8.8s-1 7.2-2.8 8.8M16 7.2c-1.8 1.6-2.8 4.2-2.8 8.8s1 7.2 2.8 8.8"></path>
+                </svg>
+                <span class="lang-current" data-lang-label>中文</span>
+            </button>
+        </div>
+</nav>
+    </header>
+
+    <main>
+
+        <!-- About -->
+        <section class="section about-section" id="about">
+            <div class="about-layout">
+                <div class="about-avatar-panel">
+                    <div class="about-avatar-frame">
+                        <img src="assets\avatar.png" alt="Portrait of Yoyo" />
+                    </div>
+                </div>
+
+                <div class="about-copy">
+                    <h2 data-i18n="aboutGreeting" data-i18n-html="true">Hello, I'm YoYo<span class="accent">.</span></h2>
+
+                    <p class="about-lead" data-i18n="aboutLead">
+                        我拥有 15 年互联网行业经验，长期从事产品策划、游戏设计、项目管理与数字创作，喜欢把想法落成真实可体验的东西。
+                    </p>
+
+                    <div class="about-text">
+                        <p data-i18n="aboutText1">
+                            我擅长从用户需求出发，梳理复杂问题，设计产品与玩法机制，并推动项目从概念走向落地。
+                        </p>
+                        <p data-i18n="aboutText2">
+                            近年来，我持续探索 AI Agent、Vibe Coding 与 AIGC，尝试把技术能力转化为更具体验感的创意与产品。
+                        </p>
+                    </div>
+
+                    <div class="about-links about-contact-list" aria-label="Contact channels">
+                        <div class="contact-stack">
+                            <div class="contact-row">
+                                <span class="contact-label" data-i18n="contactEmailLabel">Email</span>
+                                <a href="mailto:chonim1988@sina.com?subject=Portfolio%20Contact&body=Hello%20YoYo%2C%20I%20would%20like%20to%20reach%20out." class="contact-value">chonim1988@sina.com</a>
+                            </div>
+                            <!-- <div class="contact-row">
+                                <span class="contact-label" data-i18n="contactXiaohongshuLabel">Xiaohongshu</span>
+                                <span class="contact-value">@yoyoL303</span>
+                            </div>
+                            <div class="contact-row">
+                                <span class="contact-label" data-i18n="contactPhoneLabel">Phone</span>
+                                <a href="tel:+8613800000000" class="contact-value">+86 138 0000 0000</a>
+                            </div>  -->
+                        </div>
+
+                        <div class="social-buttons-row" aria-label="Social links">
+                            <a href="https://github.com/yoyoL-303" target="_blank" rel="noreferrer" class="about-link about-link-github" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <path d="M12 .9a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1 2.8-1.3 3.4-2 .2-.7.5-1.2.9-1.5-2.7-.3-5.6-1.4-5.6-6.3 0-1.4.5-2.6 1.3-3.5-.1-.3-.6-1.6.1-3.2 0 0 1.1-.4 3.5 1.3a11.8 11.8 0 0 1 6.3 0c2.4-1.7 3.5-1.3 3.5-1.3.7 1.6.2 2.9.1 3.2.8.9 1.3 2.1 1.3 3.5 0 4.9-2.9 6-5.7 6.3.4.4.8 1.1.8 2.3v3.4c0 .3.2.7.8.6A12 12 0 0 0 12 .9Z"></path>
+                                </svg>
+                                <span>GitHub</span>
+                            </a>
+                            <!-- <a href="https://x.com/yoyoL303" target="_blank" rel="noreferrer" class="about-link about-link-social" aria-label="X">
+                                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <path d="M18.9 2h3.4l-7.5 8.5L22.8 22h-6.8l-5.3-7.3L4.7 22H1.3l8-9.1L1.2 2h7l4.8 6.8L18.9 2Zm-1.2 18h1.9L7.1 3.9H5.1L17.7 20Z"></path>
+                                </svg>
+                                <span>X</span>
+                            </a> -->
+                            <a href="https://space.bilibili.com/902904" target="_blank" rel="noreferrer" class="about-link about-link-social" aria-label="Bilibili">
+                                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <path d="M17.5 3.5H6.5A3.5 3.5 0 0 0 3 7v8.5A3.5 3.5 0 0 0 6.5 19H9l1.5 2.5h3L15 19h2.5A3.5 3.5 0 0 0 21 15.5V7a3.5 3.5 0 0 0-3.5-3.5Zm-1.8 3.1 1.2 1.2-1.2 1.2-1.2-1.2 1.2-1.2Zm-7.4 0 1.2 1.2-1.2 1.2-1.2-1.2 1.2-1.2ZM7 12.7h10v1.6H7v-1.6Z"></path>
+                                </svg>
+                                <span>Bilibili</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+<!-- Game Library -->
+<section class="section works-section game-library-section" id="works">
+    <div class="section-heading">
+        <div>
+            <h2 data-i18n="worksTitle" data-i18n-html="true">Game Library<span class="accent">.</span></h2>
+        </div>
+        <p data-i18n="worksIntro" data-i18n-html="true">
+            A collection of games<br>
+            I've worked on and brought to life.
+        </p>
+    </div>
+
+    <div class="work-filter-bar" id="workFilterBar" aria-label="作品筛选"></div>
+
+    <!-- 游戏封面由 JavaScript 自动生成 -->
+    <div class="game-grid" id="gameGrid">
+        <!-- Loading placeholder -->
+    </div>
+
+    <div class="library-footer">
+        <span data-i18n="libraryFooterMore">MORE PROJECTS</span>
+        <span data-i18n="libraryFooterStories">MORE STORIES TO COME.</span>
+    </div>
+</section>
+
+<!-- Game Detail Modal -->
+<div class="game-modal" id="gameModal" aria-hidden="true">
+    <div class="game-modal-backdrop" id="modalBackdrop"></div>
+
+    <div class="game-modal-panel" role="dialog"
+         aria-modal="true" aria-labelledby="modalTitle">
+
+        <button class="modal-close" id="modalClose"
+                aria-label="Close">×</button>
+
+        <div class="modal-content" id="modalContent">
+            <!-- 游戏详情由 JavaScript 自动生成 -->
+        </div>
+
+    </div>
+</div>
+
+<button class="scroll-top-badge" id="scrollTopBadge" type="button" aria-label="Back to top">
+    <span class="scroll-top-text">TOP</span>
+    <span class="scroll-top-arrow">↑</span>
+</button>
+
+        <!-- Hero
+        <section class="hero">
+            <div class="hero-label" data-i18n="heroLabel" data-i18n-html="true">
+                <span class="status-dot"></span>
+                从业经历
+            </div>
+
+            <h1 data-i18n="heroTitle" data-i18n-html="true">
+                Ideas into<br>
+                <span class="outline-text">Experiences.</span>
+            </h1>
+
+            <p class="hero-description" data-i18n="heroDescription" data-i18n-html="true">
+                从想法，到真实体验。<br>
+                探索产品设计、AI 应用与数字创作的更多可能。
+            </p>
+
+            <div class="hero-meta">
+                <span data-i18n="heroMeta1">15 YEARS IN INTERNET INDUSTRY</span>
+                <span data-i18n="heroMeta2">BASED IN SHANGHAI · OPEN TO REMOTE</span>
+            </div>
+        </section> -->
+
+        <!-- Expertise -->
+        <section class="section expertise-section" id="expertise">
+            <div class="section-heading">
+                <div>
+                    <h2 data-i18n="expertiseTitle" data-i18n-html="true">From Experience<span class="accent">.</span></h2>
+                </div>
+                <p data-i18n="expertiseIntro" data-i18n-html="true">从用户需求到产品落地，再到创意实现。</p>
+            </div>
+
+            <div class="experience-timeline">
+                <article class="experience-item">
+                    <div class="experience-time">
+                        <span>2024</span>
+                        <span class="date-separator">-</span>
+                        <span>至今</span>
+                    </div>
+                    <div class="experience-card">
+                        <div class="experience-role" data-i18n="experience2024Role">独立创作者 / 产品策划 · 游戏设计 · AI 应用</div>
+                        <p data-i18n="experience2024Text">围绕产品思维、游戏机制、AI 赋能和创意内容制作，持续探索并落地具体验感的作品与原型。</p>
+                        <ul class="experience-tags">
+                            <li data-i18n="experience2024Tag1">产品规划</li>
+                            <li data-i18n="experience2024Tag2">游戏机制</li>
+                            <li data-i18n="experience2024Tag3">AI Agent</li>
+                            <li data-i18n="experience2024Tag4">创意内容</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="experience-item">
+                    <div class="experience-time">
+                        <span>2018</span>
+                        <span class="date-separator">-</span>
+                        <span>2024</span>
+                    </div>
+                    <div class="experience-card">
+                        <div class="experience-role" data-i18n="experience2018Role">互联网产品 / 游戏项目负责人</div>
+                        <p data-i18n="experience2018Text">负责从需求拆解到项目推进，推动玩法设计、交互体验和内容策略的协同落地，连接用户价值与商业目标。</p>
+                        <ul class="experience-tags">
+                            <li data-i18n="experience2018Tag1">需求分析</li>
+                            <li data-i18n="experience2018Tag2">项目管理</li>
+                            <li data-i18n="experience2018Tag3">跨团队协作</li>
+                            <li data-i18n="experience2018Tag4">数字叙事</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="experience-item">
+                    <div class="experience-time">
+                        <span>2012</span>
+                        <span class="date-separator">-</span>
+                        <span>2018</span>
+                    </div>
+                    <div class="experience-card">
+                        <div class="experience-role" data-i18n="experience2012Role">内容运营 / 体验设计</div>
+                        <p data-i18n="experience2012Text">在产品迭代和用户增长场景中，聚焦内容结构、传播逻辑与互动体验优化，持续提升用户参与度和项目可持续性。</p>
+                        <ul class="experience-tags">
+                            <li data-i18n="experience2012Tag1">内容策略</li>
+                            <li data-i18n="experience2012Tag2">用户增长</li>
+                            <li data-i18n="experience2012Tag3">体验优化</li>
+                            <li data-i18n="experience2012Tag4">数据洞察</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="experience-item">
+                    <div class="experience-time">
+                        <span>2009</span>
+                        <span class="date-separator">-</span>
+                        <span>2012</span>
+                    </div>
+                    <div class="experience-card">
+                        <div class="experience-role" data-i18n="experience2009Role">互联网从业早期</div>
+                        <p data-i18n="experience2009Text">从创意执行、项目协同到内容产出阶段，建立对数字产品、用户需求和创作落地的理解，形成后续产品与游戏工作的核心方法论。</p>
+                        <ul class="experience-tags">
+                            <li data-i18n="experience2009Tag1">创意执行</li>
+                            <li data-i18n="experience2009Tag2">内容制作</li>
+                            <li data-i18n="experience2009Tag3">协同推进</li>
+                            <li data-i18n="experience2009Tag4">迭代实践</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+            <h2 data-i18n="contactTitle" data-i18n-html="true">Have an idea?<br><span>Let's make it real.</span></h2>
+            <p data-i18n="contactText">欢迎交流产品、AI、游戏与数字创作相关的合作机会。</p>
+            
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <span data-i18n="footerTag">© 2026 YOYO PORTFOLIO</span>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+    <script src="games.js"></script>
+    <script src="game-library.js"></script>
+</body>
+</html>
