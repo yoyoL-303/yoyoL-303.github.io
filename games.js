@@ -213,7 +213,7 @@ const games = [
         status: { zh: "DMM", en: "DMM" },
         coverStyle: "cover-ramblade",
         // 游戏库封面
-    cover: "assets/games/ramblade/cover.png",
+    cover: "assets/games/Ramblade/cover.png",
 
     // 项目介绍
     description: {
@@ -234,24 +234,24 @@ const games = [
     media: [
         {
             type: "video",
-            src: "assets/games/ramblade/ramblade_trailer.mp4",
+            src: "assets/games/Ramblade/ramblade_trailer.mp4",
             poster: "",
             caption: "游戏预告片"
         },
         {
             type: "image",
-            src: "assets/games/ramblade/screenshot-01.jpg",
+            src: "assets/games/Ramblade/screenshot-01.jpg",
             caption: "游戏画面 02"
         },
         {
             type: "image",
-            src: "assets/games/ramblade/screenshot-02.jpg",
+            src: "assets/games/Ramblade/screenshot-02.jpg",
             caption: "游戏画面 03"
         }
         ,
         {
             type: "image",
-            src: "assets/games/ramblade/screenshot-03.jpg",
+            src: "assets/games/Ramblade/screenshot-03.jpg",
             caption: "游戏画面 04"
         }
     ]
