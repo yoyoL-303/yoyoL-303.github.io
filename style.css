@@ -1576,10 +1576,62 @@ a:focus-visible {
 
 /* ---------- 18. Responsive: Mobile ---------- */
 
+@media (max-width: 720px) {
+    .about-layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .about-avatar-frame {
+        width: min(100%, 220px);
+    }
+
+    .about-copy {
+        min-height: auto;
+    }
+
+    .about-lead {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .contact-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .contact-label {
+        min-width: 0;
+    }
+
+    .social-buttons-row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .about-link-github,
+    .about-link-social {
+        width: 100%;
+        min-width: 0;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 600px) {
 
     .navbar {
         padding: 22px 20px;
+    }
+
+    .logo {
+        font-size: 20px;
     }
 
     .menu-toggle {
@@ -1621,6 +1673,16 @@ a:focus-visible {
 
     .nav-links a:last-child {
         border-bottom: none;
+    }
+
+    .language-switch {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .lang-trigger {
+        width: 100%;
+        justify-content: center;
     }
 
     .hero {
@@ -1668,6 +1730,10 @@ a:focus-visible {
         gap: 27px 13px;
     }
 
+    .game-card {
+        max-width: none;
+    }
+
     .game-cover {
         aspect-ratio: 3 / 4;
     }
@@ -1693,17 +1759,17 @@ a:focus-visible {
         font-size: 8px;
     }
 
-    .expertise-item {
+    .experience-item {
         grid-template-columns: 30px 1fr 20px;
         gap: 10px;
         padding: 22px 0;
     }
 
-    .expertise-item h3 {
+    .experience-item h3 {
         font-size: 15px;
     }
 
-    .expertise-item p {
+    .experience-item p {
         font-size: 11px;
         line-height: 1.7;
     }
@@ -1777,6 +1843,26 @@ a:focus-visible {
         grid-template-columns: 1fr;
     }
 
+}
+
+@media (max-width: 420px) {
+    .game-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .social-buttons-row {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: clamp(48px, 18vw, 60px);
+    }
+
+    .section-heading h2,
+    .about-copy h2,
+    .contact-section h2 {
+        font-size: clamp(28px, 10vw, 42px);
+    }
 }
 
 
