@@ -1,0 +1,86 @@
+.about-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.about-page-main {
+    flex: 1;
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 72px 30px 80px;
+}
+
+.about-page-section {
+    max-width: 840px;
+    margin: 0 auto;
+    padding-top: 18px;
+}
+
+.about-page-header {
+    margin-bottom: 30px;
+}
+
+.about-page-eyebrow {
+    display: block;
+    color: var(--accent);
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.about-page-header h1 {
+    font-size: clamp(38px, 5vw, 68px);
+    letter-spacing: -0.06em;
+    line-height: 1.04;
+    margin: 0;
+    font-weight: 700;
+}
+
+.about-page-content {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding-top: 10px;
+}
+
+.about-page-content p {
+    margin: 0;
+    color: #a9b3ad;
+    font-size: 15px;
+    line-height: 1.9;
+    max-width: 760px;
+}
+
+.about-page-signature {
+    color: var(--text) !important;
+    font-size: 17px !important;
+    line-height: 1.7 !important;
+    margin-top: 10px !important;
+}
+
+.about-page .footer {
+    margin-top: auto;
+}
+
+@media (max-width: 600px) {
+    .about-page-main {
+        padding: 40px 20px 60px;
+    }
+
+    .about-page-header h1 {
+        font-size: clamp(30px, 11vw, 52px);
+    }
+
+    .about-page-content {
+        gap: 18px;
+    }
+
+    .about-page-content p {
+        font-size: 14px;
+    }
+}
