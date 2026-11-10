@@ -28,6 +28,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
+    scrollbar-gutter: stable;
 }
 
 body {
@@ -40,6 +41,13 @@ body {
         linear-gradient(rgba(140, 175, 154, 0.025) 1px, transparent 1px),
         linear-gradient(90deg, rgba(140, 175, 154, 0.025) 1px, transparent 1px);
     background-size: 50px 50px;
+}
+
+.site-container {
+    width: min(100% - 48px, var(--max-width));
+    max-width: var(--max-width);
+    margin-inline: auto;
+    box-sizing: border-box;
 }
 
 body.modal-open {

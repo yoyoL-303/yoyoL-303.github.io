@@ -50,19 +50,23 @@
     }
 
     function bindNavigation() {
-        const menuToggle = document.getElementById("menuToggle");
-        const navLinks = document.getElementById("navLinks");
+        const menuToggle = document.getElementById("menuToggle") || document.querySelector(".menu-toggle");
+        const navLinks = document.getElementById("navLinks") || document.querySelector(".nav-links");
 
         if (menuToggle && navLinks) {
             menuToggle.addEventListener("click", () => {
-                navLinks.classList.toggle("active");
+                const nextState = navLinks.classList.toggle("active");
+                menuToggle.setAttribute("aria-expanded", String(nextState));
             });
         }
 
-        document.querySelectorAll(".nav-links a").forEach(link => {
+        document.querySelectorAll(".nav-links a, #navLinks a").forEach(link => {
             link.addEventListener("click", () => {
                 if (navLinks) {
                     navLinks.classList.remove("active");
+                }
+                if (menuToggle) {
+                    menuToggle.setAttribute("aria-expanded", "false");
                 }
             });
         });

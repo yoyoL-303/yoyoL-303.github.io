@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support | Personal Digital Space</title>
+    <meta name="description" content="Support page with future-ready donation channels." />
+    <link rel="icon" type="image/png" href="../assets/favicon.png" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../site-theme.css" />
+    <link rel="stylesheet" href="./support.css" />
+  </head>
+  <body class="support-page">
+    <div class="page-shell">
+      <header class="navbar">
+        <a href="../index.html" class="logo">YOYO<span>.</span></a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="打开导航菜单" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+          <a href="../index.html" data-i18n="navHome">Home</a>
+          <a href="../about/index.html" data-i18n="navAbout">About</a>
+          <a href="../works/index.html" data-i18n="navWorks">Works</a>
+          <a href="./index.html" class="active" data-i18n="navSupport">Support</a>
+
+          <div class="language-switch" aria-label="Language selection">
+            <button type="button" class="lang-trigger" aria-label="Switch language">
+              <svg class="lang-globe" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <circle cx="12" cy="12" r="8.5"></circle>
+                <path d="M4 12h16M12 3.5c2.5 2.3 3.8 5.1 3.8 8.5S14.5 18.2 12 20.5C9.5 18.2 8.2 15.4 8.2 12S9.5 5.8 12 3.5Z"></path>
+                <path d="M8 7.2c1.8 1.6 2.8 4.2 2.8 8.8s-1 7.2-2.8 8.8M16 7.2c-1.8 1.6-2.8 4.2-2.8 8.8s1 7.2 2.8 8.8"></path>
+              </svg>
+              <span class="lang-current" data-lang-label>中文</span>
+            </button>
+          </div>
+        </nav>
+      </header>
+
+      <main class="support-main site-container">
+        <section class="support-intro">
+          <p class="eyebrow" data-i18n="supportEyebrow">Support</p>
+          <h1 data-i18n="supportPageTitle">Support the creative work</h1>
+          <p class="lead" data-i18n="supportIntro">
+            Thank you for your interest in supporting the project. The current setup keeps the donation entry intentionally off until a channel is ready to be public.
+          </p>
+        </section>
+
+        <section class="support-principles" aria-labelledby="support-principles-title">
+          <div class="section-header">
+            <p class="section-kicker" data-i18n="supportPrinciplesLabel">Support principle</p>
+            <h2 id="support-principles-title" data-i18n="supportPrinciplesTitle">How support works</h2>
+          </div>
+
+          <div class="principles-grid">
+            <article class="principle-card">
+              <h3 data-i18n="supportPrincipleOneTitle">No pressure</h3>
+              <p data-i18n="supportPrincipleOneText">Support is optional and never required for access to the work.</p>
+            </article>
+            <article class="principle-card">
+              <h3 data-i18n="supportPrincipleTwoTitle">Creative motivation</h3>
+              <p data-i18n="supportPrincipleTwoText">The goal is to keep making things, sharing experiments, and improving the portfolio.</p>
+            </article>
+            <article class="principle-card">
+              <h3 data-i18n="supportPrincipleThreeTitle">Transparent future launch</h3>
+              <p data-i18n="supportPrincipleThreeText">Public channels will only appear after the link and payment details are confirmed and ready.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="support-section" aria-labelledby="support-title">
+          <div class="section-header">
+            <p class="section-kicker" data-i18n="supportChannelsLabel">Available channels</p>
+            <h2 id="support-title" data-i18n="supportChannelsTitle">Public support</h2>
+          </div>
+
+          <div id="supportList" class="support-list"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-row">
+          <p>© 2026 yoyoL</p>
+          <div class="footer-links">
+            <a href="../about/index.html" data-i18n="navAbout">About</a>
+            <a href="../works/index.html" data-i18n="navWorks">Works</a>
+            <a href="./index.html" data-i18n="navSupport">Support</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../translations.js"></script>
+    <script src="../site-common.js"></script>
+    <script src="./support-config.js"></script>
+    <script src="./support.js"></script>
+  </body>
+</html>

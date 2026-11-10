@@ -1,0 +1,229 @@
+:root {
+    --site-bg: #050606;
+    --site-surface: #101313;
+    --site-surface-strong: #171c19;
+    --site-surface-soft: rgba(17, 22, 19, 0.9);
+    --site-text: #e8ece9;
+    --site-text-muted: #858f89;
+    --site-line: #252c28;
+    --site-accent: #8caf9a;
+    --site-accent-bright: #b0d0bc;
+    --site-content-width: 1180px;
+    --site-radius: 18px;
+    --site-transition: 0.3s ease;
+}
+
+html,
+body {
+    background: var(--site-bg);
+    color: var(--site-text);
+    font-family: Arial, "Microsoft YaHei", sans-serif;
+}
+
+html {
+    scrollbar-gutter: stable;
+}
+
+body {
+    background-image:
+        linear-gradient(rgba(140, 175, 154, 0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(140, 175, 154, 0.025) 1px, transparent 1px);
+    background-size: 50px 50px;
+}
+
+.site-container {
+    width: min(100% - 48px, var(--site-content-width));
+    max-width: var(--site-content-width);
+    margin-inline: auto;
+    box-sizing: border-box;
+}
+
+.page-shell,
+.works-page,
+.support-page,
+.project-page,
+.about-page {
+    background: var(--site-bg);
+    color: var(--site-text);
+}
+
+.site-header,
+.navbar {
+    width: 100%;
+    max-width: var(--site-content-width);
+    margin: 0 auto;
+    padding: 22px 30px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 100;
+}
+
+.topbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.brand,
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.15rem;
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: var(--site-text);
+}
+
+.brand-mark,
+.logo span {
+    color: var(--site-accent);
+}
+
+.brand-text,
+.logo {
+    color: var(--site-text);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+.nav-links a {
+    font-size: 12px;
+    color: var(--site-text-muted);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color var(--site-transition);
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--site-accent-bright);
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 23px;
+    height: 1px;
+    background: var(--site-text);
+}
+
+.site-footer,
+.footer {
+    max-width: var(--site-content-width);
+    margin: 0 auto;
+    padding: 22px 30px 30px;
+    border-top: 1px solid var(--site-line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    color: var(--site-text-muted);
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.footer-links a {
+    color: var(--site-text-muted);
+    transition: color var(--site-transition);
+}
+
+.footer-links a:hover {
+    color: var(--site-accent-bright);
+}
+
+.site-footer p,
+.footer > span {
+    color: #657069;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .site-header,
+    .navbar {
+        padding: 22px 20px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        padding: 8px;
+        z-index: 110;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 20px;
+        right: 20px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 12px 20px;
+        background: #101512;
+        border: 1px solid var(--site-line);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 15px 0;
+        border-bottom: 1px solid var(--site-line);
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+
+    .lang-trigger {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .site-footer,
+    .footer {
+        padding: 25px 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .footer-row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

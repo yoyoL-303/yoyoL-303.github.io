@@ -6,22 +6,23 @@
     <meta name="description" content="About YoYo: a personal digital space for ideas, experiments, and creative exploration.">
     <title>About | YOYO</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../site-theme.css">
     <link rel="stylesheet" href="./about.css">
 </head>
 <body class="about-page">
     <header class="navbar">
         <a href="../index.html" class="logo">YOYO<span>.</span></a>
 
-        <button class="menu-toggle" id="menuToggle" aria-label="打开导航菜单">
+        <button class="menu-toggle" id="menuToggle" aria-label="打开导航菜单" aria-expanded="false">
             <span></span>
             <span></span>
         </button>
 
         <nav class="nav-links" id="navLinks">
             <a href="../index.html" data-i18n="navHome">Home</a>
-            <a href="#" data-i18n="navWorks">Works</a>
-            <a href="./index.html" data-i18n="navAbout">About</a>
-            <a href="#" data-i18n="navSupport">Support</a>
+            <a href="../works/index.html" data-i18n="navWorks">Works</a>
+            <a href="./index.html" class="active" data-i18n="navAbout">About</a>
+            <a href="../support/index.html" data-i18n="navSupport">Support</a>
 
             <div class="language-switch" aria-label="Language selection">
                 <button type="button" class="lang-trigger" aria-label="Switch language">
@@ -36,7 +37,7 @@
         </nav>
     </header>
 
-    <main class="about-page-main">
+    <main class="about-page-main site-container">
         <section class="about-page-section">
             <div class="about-page-header">
                 <p class="about-page-eyebrow" data-i18n="aboutPageEyebrow">About Me</p>
